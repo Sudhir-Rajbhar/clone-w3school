@@ -47,10 +47,16 @@ body {
   color: var(--primary-color-green);
   font-weight: 900;
   padding: 8px 16px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 .logo:hover {
     color: #038d5a;
     cursor: pointer;
+}
+.logo i {
+  font-size: 2em;
 }
 .head-left-nav a {
   padding: 16px !important;
