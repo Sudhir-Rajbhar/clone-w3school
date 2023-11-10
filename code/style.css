@@ -15,6 +15,8 @@
   --light-yellow: #fff4a3;
   --green-cream: #D9EEE1;
   --light-pink: #FFC0C7;
+  --medium-grey: #e7e9eb;
+
   /* Spacings */
   --top-small-space: 15px 0;
 }
@@ -32,7 +34,6 @@ body {
   height: 100%;
 }
 
-/* Let's style the head */
 .header {
   margin: 4px;
   height: 3.5em;
@@ -243,10 +244,10 @@ height: 3em;
   color: var(--white);
 }
 .html-links :nth-child(1) {
-  background-color: var(--primary-color-green) !important;
+  background-color: var(--primary-color-green) ;
 }
 .html-links :nth-child(2) {
-  background-color: var(--light-yellow) !important;
+  background-color: var(--light-yellow) ;
   color: var(--black) !important;
 }
 .html-links :nth-child(3) {
@@ -256,9 +257,56 @@ height: 3em;
   background-color: var(--light-pink);
   color: var(--black) !important;
 }
+.html-links a:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.103) 0 0);
+}
+
 /* Fake Image */
 .fake-image {
   background-color: gray;
   width: 450px;
   height: 450px;
+}
+
+/* Card Design */
+.card-bg {
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  height: 100%;
+  background-color: var(--medium-grey);
+  padding: 26px;
+}
+.card-bg h3 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.card-code {
+  background-color: var(--white);
+  border-left: 5px solid var(--primary-color-green);
+  margin-bottom: 6px;
+}
+.card-code > * {
+  padding-top: 5px;
+  padding-left: 20px;
+  font-size: 20px;
+}
+.subtitute-h {
+  padding-top: 20px;
+}
+.subtitute-p {
+  padding-bottom: 20px;
+}
+.card-button {
+  border: none;
+  border-radius: 30px;
+  background-color: var(--primary-color-green);
+  color: var(--white);
+  font-size: 25px;
+  padding: 5px 20px;
+  display: block;
+  text-align: center;
+  width: 200px;
+  font-weight: 400;
+}
+.card-button:hover {
+  background-color: var(--primary-color-green-a);
 }
